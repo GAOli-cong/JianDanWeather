@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@drawable/jianjie"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="请输入城市"
+    android:gravity="center"
+    android:background="#36A6B4"
+    android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/edit_chengshi"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/edit_bc"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="请输入区、县（例：新泰）"
+        />
+    <Button
+        android:id="@+id/btn_quding"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/jianjie"
+        android:text="确定"/>
+</LinearLayout>

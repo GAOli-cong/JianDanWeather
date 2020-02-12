@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="100dp"
+    android:layout_height="150dp">
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/re2_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="02-10"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/re2_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:text="多云"/>
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/re2_img_zhuangtai"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@mipmap/duoyun"/>
+        <TextView
+            android:id="@+id/re2_tv3"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:text="18℃"/>
+        <TextView
+            android:id="@+id/re2_tv4"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:text="18℃"/>
+    </LinearLayout>
+
+</LinearLayout>

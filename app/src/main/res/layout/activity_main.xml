@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/jianjie"
+    android:id="@+id/main_layout"
+    tools:context=".MainActivity">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/srl_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3">
+
+                        <TextView
+                            android:id="@+id/tv_cityName"
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="北京"
+                            android:textSize="25sp" />
+                        <TextView
+                            android:id="@+id/tv_qiehuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:paddingBottom="20dp"
+                            android:text="切换"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_sheshidu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                android:text="℃"
+                                android:textSize="56sp" />
+
+                            <TextView
+                                android:id="@+id/tv_fengxiang"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="南风" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingRight="20dp">
+
+                            <ImageView
+                                android:id="@+id/img_now_zhuangkuang"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:src="@mipmap/qinglang" />
+
+                            <TextView
+                                android:id="@+id/tv_zhuangtai"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:text="晴" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3小时预报"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/ry_recycleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"></androidx.recyclerview.widget.RecyclerView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7天预报"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/ry_recycleView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"></androidx.recyclerview.widget.RecyclerView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/foot_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="舒适度指数:"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/foot_tv11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="      天气较好，但考虑风力较强且气温较低，推荐您进行室内运动，若在户外运动请注意防风并适当增减衣物。"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/foot_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="洗车指数:"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/foot_tv22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="      天气较好，但考虑风力较强且气温较低，推荐您进行室内运动，若在户外运动请注意防风并适当增减衣物。"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/foot_tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="穿衣指数:"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/foot_tv33"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="      天气较好，但考虑风力较强且气温较低，推荐您进行室内运动，若在户外运动请注意防风并适当增减衣物。"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/foot_tv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="感冒指数:"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/foot_tv44"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="      天气较好，但考虑风力较强且气温较低，推荐您进行室内运动，若在户外运动请注意防风并适当增减衣物。"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/foot_tv5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="运动指数:"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/foot_tv55"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="      天气较好，但考虑风力较强且气温较低，推荐您进行室内运动，若在户外运动请注意防风并适当增减衣物。"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/foot_tv6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="旅游指数:"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/foot_tv66"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="      天气较好，但考虑风力较强且气温较低，推荐您进行室内运动，若在户外运动请注意防风并适当增减衣物。"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_lianxiwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="联系我：www.gaolicong.xyz"
+                    android:textColor="#0099ff"
+                    android:gravity="center"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>
