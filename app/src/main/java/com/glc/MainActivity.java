@@ -157,12 +157,12 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * 请求
-     *
+     *注意请将秘钥替换为：自己到京东万象申请秘钥
      * @param cityName 城市名称
      */
     private void selectWeather(String cityName) {
         JSONObject jsonObject = new JSONObject();
-        String url = "https://way.jd.com/he/freeweather?city=" + cityName + "&appkey=276d12e94a60a9bffecfbb2eba62578e";
+        String url = "https://way.jd.com/he/freeweather?city=" + cityName + "&appkey=秘钥";
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, jsonObject, new Response.Listener<JSONObject>() {
             @Override
